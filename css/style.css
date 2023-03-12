@@ -65,7 +65,9 @@ body {
   cursor: pointer;
 }
 
-.button1:hover {
+.button1:hover,
+.button1:focus,
+.button1:active {
   width: 12.5em;
   transition-delay: .5s;
   
@@ -108,7 +110,9 @@ body {
   transform: translateX(0.625em);
 }
 
-.button1:hover span::before {
+.button1:hover span::before,
+.button1:focus span::before,
+.button1:active span::before {
   content: 'validate';
   position: absolute;
   left: 30%;
@@ -117,7 +121,9 @@ body {
   letter-spacing: .188em;
 }
 
-.button1:hover span::after {
+.button1:hover span::after,
+.button1:focus span::after,
+.button1:active span::after {
   content: '';
   position: absolute;
   visibility: hidden;
@@ -144,11 +150,14 @@ body {
   border-radius: 1.875em;
   border: .125em solid var(--clr-bord1);
   background-color: var(--clr-bkg);
+  /* outline-color: transparent; */
   transition: all .5s ease;
   cursor: pointer;
 }
 
-.button2:hover {
+.button2:hover,
+.button2:focus,
+.button2:active {
   width: 12.5em;
   transition-delay: .5s;
   text-shadow: 0 0 .313em var(--clr-txt-sha),
@@ -181,14 +190,18 @@ body {
   transition-delay: .5s;
 }
 
-.button2:hover span {
+.button2:hover span,
+.button2:focus span,
+.button2:active span {
   visibility: visible;
   opacity: 1;
   transition-delay: .75s;
   transform: translateX(0.625em);
 }
 
-.button2:hover span::before {
+.button2:hover span::before,
+.button2:focus span::before,
+.button2:active span::before {
   content: 'validate';
   position: absolute;
   left: 30%;
@@ -197,7 +210,9 @@ body {
   letter-spacing: .188em;
 }
 
-.button2:hover span::after {
+.button2:hover span::after,
+.button2:focus span::after,
+.button2:active span::after {
   content: '';
   position: absolute;
   visibility: hidden;
